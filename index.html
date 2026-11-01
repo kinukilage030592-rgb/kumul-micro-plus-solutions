@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kumul Micro Plus Solutions helps Papua New Guinean businesses grow through affordable digital marketing, websites and business automation.">
+<meta name="theme-color" content="#c8102e">
+<title>Kumul Micro Plus Solutions | Digital Solutions for PNG</title>
+<style>
+:root{--red:#c8102e;--gold:#f2bd19;--ink:#101114;--muted:#62656d;--paper:#fff;--soft:#f6f6f7;--line:#e8e8eb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand img{display:block;width:210px;max-height:66px;object-fit:contain}.links{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:650}.links a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:white;padding:13px 21px;border-radius:7px;font-weight:750;border:2px solid var(--red);transition:.2s}.btn:hover{background:#a70d25;border-color:#a70d25;transform:translateY(-1px)}.btn.alt{background:transparent;color:var(--red)}.btn.alt:hover{background:#fff1f3}
+.hero{padding:82px 0 76px;background:radial-gradient(circle at 85% 12%,rgba(242,189,25,.18),transparent 28%),linear-gradient(135deg,#fff 0%,#fff 62%,#fff8e3 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:42px}
+.eyebrow{display:inline-block;color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+h1{font-size:clamp(38px,5.2vw,66px);line-height:1.06;letter-spacing:-2px;margin:17px 0 20px}h1 span{color:var(--red)}
+.lead{font-size:18px;color:var(--muted);max-width:610px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-card{background:var(--ink);color:white;padding:35px;border-radius:18px;position:relative;box-shadow:0 24px 65px rgba(0,0,0,.16)}
+.hero-card:before{content:"";position:absolute;width:130px;height:130px;border:18px solid var(--gold);border-radius:50%;right:-22px;top:-25px;opacity:.9}
+.hero-card>*{position:relative}.hero-card h2{font-size:25px;line-height:1.2;margin:0 0 14px}.hero-card p{color:#d4d4d8;margin:0 0 24px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini{background:#24252a;padding:16px;border-radius:10px;border-left:3px solid var(--gold)}.mini b{display:block;font-size:15px}.mini small{color:#c7c7cb}
+section{padding:76px 0}.section-head{max-width:690px;margin-bottom:34px}.section-head h2{font-size:clamp(29px,4vw,42px);line-height:1.15;letter-spacing:-1px;margin:9px 0 12px}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:13px;padding:25px;background:white;box-shadow:0 8px 24px rgba(15,15,20,.035)}.icon{width:44px;height:44px;border-radius:10px;background:#fff1d0;color:#8a6200;display:grid;place-items:center;font-size:22px;margin-bottom:17px}.card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:15px}
+.soft{background:var(--soft)}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}.about-panel{background:var(--ink);border-radius:16px;padding:34px;color:white}.about-panel .tag{color:var(--gold);font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:12px}.about-panel h3{font-size:28px;line-height:1.2;margin:12px 0}.about-panel p{color:#d3d3d7}.checks{display:grid;gap:13px;margin-top:20px}.check{display:flex;gap:11px;align-items:flex-start}.check span{color:var(--red);font-weight:900}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:22px;border-top:3px solid var(--gold);background:white}.step strong{font-size:12px;color:var(--red);letter-spacing:1px}.step h3{margin:8px 0}.step p{color:var(--muted);margin:0;font-size:15px}
+.cta{background:linear-gradient(115deg,#a90d26,#d31535);color:white;padding:58px 0}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-size:clamp(27px,4vw,40px);line-height:1.15;margin:0 0 8px}.cta p{margin:0;color:#ffe4e8}.cta .btn{background:white;color:var(--red);border-color:white;white-space:nowrap}
+footer{background:#101114;color:white;padding:34px 0}.foot{display:flex;align-items:center;justify-content:space-between;gap:20px}.foot p{margin:4px 0;color:#bfc0c4;font-size:13px}.foot strong{font-size:15px}.foot .tagline{color:var(--gold)}
+.note{font-size:12px;color:#777;margin-top:14px}
+@media(max-width:800px){.links{gap:12px;font-size:12px}.links a:not(.btn){display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:55px 0}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.cta-inner{align-items:flex-start;flex-direction:column}.brand img{width:170px}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.nav{min-height:68px}.brand img{width:145px}.links .btn{padding:10px 12px;font-size:12px}.hero-card{padding:25px}.mini-grid{grid-template-columns:1fr 1fr}.foot{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home" aria-label="Kumul Micro Plus Solutions home"><img src="assets/kumul-micro-plus-logo.png" alt="Kumul Micro Plus Solutions logo"></a>
+  <nav class="links" aria-label="Main navigation">
+   <a href="#services">Services</a><a href="#about">About</a><a href="#process">How it works</a><a class="btn" href="#contact">Get in touch</a>
+  </nav>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="eyebrow">Digital solutions for Papua New Guinea</span>
+   <h1>Helping PNG businesses <span>grow smarter.</span></h1>
+   <p class="lead">We help Papua New Guinean businesses build their online presence, reach more customers and simplify everyday work through affordable digital solutions.</p>
+   <div class="actions"><a class="btn" href="#contact">Discuss your business</a><a class="btn alt" href="#services">Explore our services</a></div>
+  </div>
+  <div class="hero-card">
+   <h2>Practical technology.<br>Real business growth.</h2>
+   <p>Digital tools made more accessible for local businesses, entrepreneurs and growing teams.</p>
+   <div class="mini-grid">
+    <div class="mini"><b>Get visible</b><small>Build your online presence</small></div>
+    <div class="mini"><b>Connect</b><small>Make customer enquiries easier</small></div>
+    <div class="mini"><b>Work smarter</b><small>Reduce repetitive tasks</small></div>
+    <div class="mini"><b>Grow online</b><small>Reach more potential customers</small></div>
+   </div>
+  </div>
+ </div>
+</section>
+<section id="services">
+ <div class="wrap">
+  <div class="section-head"><span class="eyebrow">What we do</span><h2>Digital services that move your business forward.</h2><p>Choose the support you need today and build on it as your business grows.</p></div>
+  <div class="cards">
+   <article class="card"><div class="icon">✦</div><h3>AI-powered digital marketing</h3><p>Plan campaigns, develop marketing messages and create content that helps your business reach the right audience.</p></article>
+   <article class="card"><div class="icon">⌘</div><h3>Website development</h3><p>Establish a professional online home where customers can learn about your business, services and contact details.</p></article>
+   <article class="card"><div class="icon">⚙</div><h3>Business automation</h3><p>Simplify repetitive business processes with practical digital workflows and tools.</p></article>
+   <article class="card"><div class="icon">◎</div><h3>Social media content & advertising</h3><p>Create consistent branded content and campaigns for the social platforms your customers use.</p></article>
+   <article class="card"><div class="icon">☏</div><h3>Digital customer enquiry systems</h3><p>Make it easier for customers to ask questions, request information and take the next step.</p></article>
+   <article class="card"><div class="icon">↗</div><h3>Digital growth support</h3><p>Get practical guidance choosing and using digital tools that suit your goals and budget.</p></article>
+  </div>
+ </div>
+</section>
+<section class="soft" id="about">
+ <div class="wrap about-grid">
+  <div class="about-panel"><span class="tag">Local focus · Digital ambition</span><h3>Built to help PNG businesses take the next step.</h3><p>From a first business website to a more organised customer enquiry process, we make digital solutions easier to understand and put to work.</p></div>
+  <div><span class="eyebrow">About Kumul Micro Plus Solutions</span><div class="section-head"><h2>Innovative Digital Solutions for a Connected PNG.</h2><p>Based in Port Moresby, Papua New Guinea, Kumul Micro Plus Solutions supports businesses looking to work smarter and grow online.</p></div>
+   <div class="checks"><div class="check"><span>✓</span><div><b>Practical and affordable</b><br><small>Solutions designed around your business needs and starting budget.</small></div></div><div class="check"><span>✓</span><div><b>Clear communication</b><br><small>Understand what you are getting and how it helps your business.</small></div></div><div class="check"><span>✓</span><div><b>Room to grow</b><br><small>Start with what you need and expand your digital tools over time.</small></div></div></div>
+  </div>
+ </div>
+</section>
+<section id="process">
+ <div class="wrap">
+  <div class="section-head"><span class="eyebrow">A simple process</span><h2>From your idea to a digital solution.</h2><p>We start by understanding your business, then recommend a practical way forward.</p></div>
+  <div class="steps">
+   <div class="step"><strong>01 / DISCOVER</strong><h3>Tell us what you need</h3><p>Share your business goals, current challenges and the customers you want to reach.</p></div>
+   <div class="step"><strong>02 / PLAN</strong><h3>Agree on the solution</h3><p>We outline the scope, deliverables, timeline and cost before work begins.</p></div>
+   <div class="step"><strong>03 / BUILD</strong><h3>Bring it to life</h3><p>We develop your agreed digital solution and guide you through the handover.</p></div>
+  </div>
+ </div>
+</section>
+<section class="cta" id="contact">
+ <div class="wrap cta-inner"><div><h2>Ready to grow your business online?</h2><p>Let's discuss a digital solution that works for your business.</p></div><a class="btn" href="mailto:">Contact Kumul Micro Plus Solutions</a></div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><strong>Kumul Micro Plus Solutions</strong><p class="tagline">Innovative Digital Solutions for a Connected PNG.</p></div><p>Based in Port Moresby, Papua New Guinea<br>© <span id="year"></span> Kumul Micro Plus Solutions</p></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
