@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="780" height="220" viewBox="0 0 780 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Kumul Micro Plus Solutions logo</title>
+  <desc id="desc">A red and gold logo for Kumul Micro Plus Solutions with a stylized emblem and wordmark.</desc>
+  <defs>
+    <linearGradient id="g1" x1="30" y1="20" x2="180" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C8102E"/>
+      <stop offset="1" stop-color="#A50B22"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="80" y1="20" x2="150" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7D35E"/>
+      <stop offset="1" stop-color="#F2BD19"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(0 8)">
+    <circle cx="92" cy="102" r="72" fill="url(#g1)"/>
+    <circle cx="92" cy="102" r="54" stroke="url(#g2)" stroke-width="8" fill="none"/>
+    <path d="M59 63H82L104 95L127 63H151V144H127V108L101 138H83L58 108V144H34V63H59ZM59 63H34" fill="white" opacity="0.96"/>
+    <path d="M34 63H59L82 63H104L127 63H151V74H127L104 74H82L59 74H34V63Z" fill="#F2BD19" opacity="0.95"/>
+  </g>
+
+  <g transform="translate(220 58)">
+    <text x="0" y="54" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="1.5" fill="#101114">KUMUL</text>
+    <text x="3" y="96" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="5" fill="#C8102E">MICRO PLUS</text>
+    <rect x="0" y="112" width="335" height="5" rx="2.5" fill="#F2BD19"/>
+    <text x="3" y="150" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="2.8" fill="#4A4D52">SOLUTIONS</text>
+  </g>
+</svg>
