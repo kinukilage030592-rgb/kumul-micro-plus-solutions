@@ -12,25 +12,58 @@
 a{color:inherit;text-decoration:none}.wrap{width:min(1140px,92%);margin:auto}
 header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}
-.brand img{display:block;width:210px;max-height:66px;object-fit:contain}.links{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:650}.links a:hover{color:var(--red)}
-.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:white;padding:13px 21px;border-radius:7px;font-weight:750;border:2px solid var(--red);transition:.2s}[...]
+.brand{display:inline-flex;align-items:center;justify-content:center}
+.brand-mark{display:inline-flex;align-items:center;justify-content:center}
+.brand-mark svg{display:block;width:210px;height:auto;max-height:66px;object-fit:contain}.links{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:650}.links a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:white;padding:13px 21px;border-radius:7px;font-weight:750;border:2px solid var(--red);transition:.2s}.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}.btn:hover{transform:translateY(-1px)}
 .hero{padding:82px 0 76px;background:radial-gradient(circle at 85% 12%,rgba(242,189,25,.18),transparent 28%),linear-gradient(135deg,#fff 0%,#fff 62%,#fff8e3 100%);overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:42px}
-.eyebrow{display:inline-block;color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:42px}.eyebrow{display:inline-block;color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
 h1{font-size:clamp(38px,5.2vw,66px);line-height:1.06;letter-spacing:-2px;margin:17px 0 20px}h1 span{color:var(--red)}
 .lead{font-size:18px;color:var(--muted);max-width:610px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}
 .hero-card{background:var(--ink);color:white;padding:35px;border-radius:18px;position:relative;box-shadow:0 24px 65px rgba(0,0,0,.16)}
 .hero-card:before{content:"";position:absolute;width:130px;height:130px;border:18px solid var(--gold);border-radius:50%;right:-22px;top:-25px;opacity:.9}
-.hero-card>*{position:relative}.hero-card h2{font-size:25px;line-height:1.2;margin:0 0 14px}.hero-card p{color:#d4d4d8;margin:0 0 24px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12p[...]
-section{padding:76px 0}.section-head{max-width:690px;margin-bottom:34px}.section-head h2{font-size:clamp(29px,4vw,42px);line-height:1.15;letter-spacing:-1px;margin:9px 0 12px}.section-head p{color[...]
-@media(max-width:800px){.links{gap:12px;font-size:12px}.links a:not(.btn){display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:55px 0}.cards{grid-template-columns:1fr 1fr}.c[...]
-@media(max-width:520px){.cards{grid-template-columns:1fr}.nav{min-height:68px}.brand img{width:145px}.links .btn{padding:10px 12px;font-size:12px}.hero-card{padding:25px}.mini-grid{grid-template-c[...]
+.hero-card>*{position:relative}.hero-card h2{font-size:25px;line-height:1.2;margin:0 0 14px}.hero-card p{color:#d4d4d8;margin:0 0 24px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini{display:flex;flex-direction:column;gap:4px;padding:14px 14px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}.mini b{font-size:14px}.mini small{color:#cbcdd3;font-size:12px}
+section{padding:76px 0}.soft{background:var(--soft)}.section-head{max-width:690px;margin-bottom:34px}.section-head h2{font-size:clamp(29px,4vw,42px);line-height:1.15;letter-spacing:-1px;margin:9px 0 12px}.section-head p{color:var(--muted);font-size:17px;margin:0}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.card{background:#fff;padding:28px 24px;border:1px solid var(--line);border-radius:16px;box-shadow:0 10px 30px rgba(16,17,20,.03)}.icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:#fff4d8;color:var(--red);font-size:22px;font-weight:800;margin-bottom:12px}.card h3{margin:0 0 9px;font-size:22px}.card p{margin:0;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:center}.about-panel,.about-copy{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px}.tag{display:inline-block;padding:8px 12px;border-radius:999px;background:#fff3cb;color:var(--ink);font-size:12px;font-weight:800;letter-spacing:.5px;text-transform:uppercase}.about-panel h3,.about-copy h2{margin:16px 0 14px}.about-panel p,.about-copy p{color:var(--muted);margin:0 0 18px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.stat{padding:18px 14px;border-radius:12px;background:var(--soft)}.stat b{display:block;font-size:28px;color:var(--red)}.stat span{color:var(--muted);font-size:13px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.step{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:24px}.step strong{display:block;color:var(--red);font-size:12px;letter-spacing:2px;margin-bottom:12px}.step h3{margin:0 0 8px;font-size:22px}.step p{margin:0;color:var(--muted)}
+.cta{padding-top:32px;padding-bottom:72px}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(135deg,#101114,#1e1f24);border-radius:20px;padding:28px 30px;color:white}.cta-inner h2{margin:0 0 8px;font-size:clamp(26px,4vw,38px);line-height:1.1}.cta-inner p{margin:0;color:#d9d9dc}.foot{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:24px 0 42px;color:var(--muted)}.foot strong{color:var(--ink)}.tagline{margin:6px 0 0}.year{font-weight:700;color:var(--ink)}
+@media(max-width:800px){.links{gap:12px;font-size:12px}.links a:not(.btn){display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:55px 0}.cards{grid-template-columns:1fr 1fr}.cta-inner,.foot{flex-direction:column;align-items:flex-start}.steps{grid-template-columns:1fr}}
+@media(max-width:520px){.cards,.steps,.stats{grid-template-columns:1fr}.nav{min-height:68px}.brand-mark svg{width:145px}.links .btn{padding:10px 12px;font-size:12px}.hero-card{padding:25px}.mini-grid{grid-template-columns:1fr}.cta-inner{padding:22px 20px}}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap nav">
-   <a class="brand" href="#home" aria-label="Kumul Micro Plus Solutions home"><img src="assets/kumul-micro-plus-logo.svg" alt="Kumul Micro Plus Solutions logo"></a>
+   <a class="brand" href="#home" aria-label="Kumul Micro Plus Solutions home">
+     <span class="brand-mark" aria-hidden="true">
+       <svg width="780" height="220" viewBox="0 0 780 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+         <title id="title">Kumul Micro Plus Solutions logo</title>
+         <desc id="desc">A red and gold logo for Kumul Micro Plus Solutions with a stylized emblem and wordmark.</desc>
+         <defs>
+           <linearGradient id="g1" x1="30" y1="20" x2="180" y2="190" gradientUnits="userSpaceOnUse">
+             <stop stop-color="#C8102E"/>
+             <stop offset="1" stop-color="#A50B22"/>
+           </linearGradient>
+           <linearGradient id="g2" x1="80" y1="20" x2="150" y2="170" gradientUnits="userSpaceOnUse">
+             <stop stop-color="#F7D35E"/>
+             <stop offset="1" stop-color="#F2BD19"/>
+           </linearGradient>
+         </defs>
+         <g transform="translate(0 8)">
+           <circle cx="92" cy="102" r="72" fill="url(#g1)"/>
+           <circle cx="92" cy="102" r="54" stroke="url(#g2)" stroke-width="8" fill="none"/>
+           <path d="M59 63H82L104 95L127 63H151V144H127V108L101 138H83L58 108V144H34V63H59ZM59 63H34" fill="white" opacity="0.96"/>
+           <path d="M34 63H59L82 63H104L127 63H151V74H127L104 74H82L59 74H34V63Z" fill="#F2BD19" opacity="0.95"/>
+         </g>
+         <g transform="translate(220 58)">
+           <text x="0" y="54" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="1.5" fill="#101114">KUMUL</text>
+           <text x="3" y="96" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="5" fill="#C8102E">MICRO PLUS</text>
+           <rect x="0" y="112" width="335" height="5" rx="2.5" fill="#F2BD19"/>
+           <text x="3" y="150" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="2.8" fill="#4A4D52">SOLUTIONS</text>
+         </g>
+       </svg>
+     </span>
+   </a>
    <nav class="links" aria-label="Main navigation">
     <a href="#services">Services</a><a href="#about">About</a><a href="#process">How it works</a><a class="btn" href="#contact">Get in touch</a>
    </nav>
@@ -64,7 +97,7 @@ section{padding:76px 0}.section-head{max-width:690px;margin-bottom:34px}.section
     <article class="card"><div class="icon">✦</div><h3>AI-powered digital marketing</h3><p>Plan campaigns, develop marketing messages and create content that helps your business reach the right audience.</p></article>
     <article class="card"><div class="icon">⌘</div><h3>Website development</h3><p>Establish a professional online home where customers can learn about your business, services and contact details.</p></article>
     <article class="card"><div class="icon">⚙</div><h3>Business automation</h3><p>Simplify repetitive business processes with practical digital workflows and tools.</p></article>
-    <article class="card"><div class="icon">◎</div><h3>Social media content & advertising</h3><p>Create consistent branded content and campaigns for the social platforms your customers use.</p></article>
+    <article class="card"><div class="icon">◎</div><h3>Social media content &amp; advertising</h3><p>Create consistent branded content and campaigns for the social platforms your customers use.</p></article>
     <article class="card"><div class="icon">☏</div><h3>Digital customer enquiry systems</h3><p>Make it easier for customers to ask questions, request information and take the next step.</p></article>
     <article class="card"><div class="icon">↗</div><h3>Digital growth support</h3><p>Get practical guidance choosing and using digital tools that suit your goals and budget.</p></article>
    </div>
@@ -72,13 +105,25 @@ section{padding:76px 0}.section-head{max-width:690px;margin-bottom:34px}.section
 </section>
 <section class="soft" id="about">
   <div class="wrap about-grid">
-   <div class="about-panel"><span class="tag">Local focus · Digital ambition</span><h3>Built to help PNG businesses take the next step.</h3><p>From a first business website to a more organised customer enquiry process, we help clients build digital systems that are simple, useful and ready to grow.</p></div>
-   <div><span class="eyebrow">About Kumul Micro Plus Solutions</span><div class="section-head"><h2>Innovative Digital Solutions for a Connected PNG.</h2><p>Based in Port Moresby, Papua New Guinea, we support businesses with practical digital services designed around real-world local needs.</p></div></div>
+   <div class="about-panel">
+    <span class="tag">Local focus · Digital ambition</span>
+    <h3>Built to help PNG businesses take the next step.</h3>
+    <p>From a first business website to a more organised customer enquiry process, we help business owners adopt practical and affordable digital solutions.</p>
+    <div class="stats">
+      <div class="stat"><b>1</b><span>Partnership approach</span></div>
+      <div class="stat"><b>24/7</b><span>Digital reach</span></div>
+      <div class="stat"><b>PNG</b><span>Local focus</span></div>
+    </div>
+   </div>
+   <div class="about-copy">
+    <span class="eyebrow">About Kumul Micro Plus Solutions</span>
+    <div class="section-head"><h2>Innovative Digital Solutions for a Connected PNG.</h2><p>Based in Port Moresby, Papua New Guinea, we work with businesses that want a better online presence, clearer systems and practical tools to support growth.</p></div>
+   </div>
   </div>
 </section>
 <section id="process">
   <div class="wrap">
-   <div class="section-head"><span class="eyebrow">A simple process</span><h2>From your idea to a digital solution.</h2><p>We start by understanding your business, then recommend a practical way forward and support you through implementation.</p></div>
+   <div class="section-head"><span class="eyebrow">A simple process</span><h2>From your idea to a digital solution.</h2><p>We start by understanding your business, then recommend a practical way forward.</p></div>
    <div class="steps">
     <div class="step"><strong>01 / DISCOVER</strong><h3>Tell us what you need</h3><p>Share your business goals, current challenges and the customers you want to reach.</p></div>
     <div class="step"><strong>02 / PLAN</strong><h3>Agree on the solution</h3><p>We outline the scope, deliverables, timeline and cost before work begins.</p></div>
@@ -87,9 +132,9 @@ section{padding:76px 0}.section-head{max-width:690px;margin-bottom:34px}.section
   </div>
 </section>
 <section class="cta" id="contact">
-  <div class="wrap cta-inner"><div><h2>Ready to grow your business online?</h2><p>Let's discuss a digital solution that works for your business.</p></div><a class="btn" href="https://wa.me/67584983161?text=Hello%20Kumul%20Micro%20Plus%20Solutions%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener">Chat with us on WhatsApp</a></div>
+  <div class="wrap cta-inner"><div><h2>Ready to grow your business online?</h2><p>Let's discuss a digital solution that works for your business.</p></div><a class="btn" href="mailto:hello@kumulmicroplus.com">Contact Kumul Micro Plus</a></div>
 </section>
 </main>
-<footer><div class="wrap foot"><div><strong>Kumul Micro Plus Solutions</strong><p class="tagline">Innovative Digital Solutions for a Connected PNG.</p></div><p>Based in Port Moresby, Papua New Guinea, we help businesses stay visible, connected and easier to work with online.</p><p>© <span id="year"></span> Kumul Micro Plus Solutions. All rights reserved.</p></div></footer>
+<footer><div class="wrap foot"><div><strong>Kumul Micro Plus Solutions</strong><p class="tagline">Innovative Digital Solutions for a Connected PNG.</p></div><p>Based in Port Moresby, Papua New Guinea.</p><p class="year">© <span id="year"></span> Kumul Micro Plus Solutions</p></div></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body></html>
